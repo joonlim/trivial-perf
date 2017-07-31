@@ -1,2 +1,6 @@
 runtime: custom
 env: flex
+
+health_check:
+  check_interval_sec: 10
+  timeout_sec: 10
