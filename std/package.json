@@ -12,7 +12,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "abcgcf": "/Users/teich/.asdf/installs/nodejs/8.2.1/.npm/lib/node_modules/artillery/bin/artillery quick --duration 60 --rate 10 -n 5 https://us-central1-teich-functions.cloudfunctions.net/helloWorld",
     "abflex": "/Users/teich/.asdf/installs/nodejs/8.2.1/.npm/lib/node_modules/artillery/bin/artillery quick --duration 60 --rate 2 -n 2 https://teich-perf-flex.appspot.com/",
-    "start": "node index.js"
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC"

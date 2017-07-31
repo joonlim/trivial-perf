@@ -1,0 +1,6 @@
+runtime: nodejs7
+threadsafe: true  # send more than one concurrent request at a time
+
+handlers:
+- url: /.*
+  script: server.js
