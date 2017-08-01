@@ -1,0 +1,16 @@
+{
+  "name": "simple-perf",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+  },
+  "devDependencies": {},
+  "scripts": {
+    "ab": "artillery quick --duration 600 --rate 20 -n 2 https://us-central1-teich-functions.cloudfunctions.net/helloWorld",
+    "deploy": "gcloud beta functions deploy helloWorld --stage-bucket teich-functions-2 --trigger-http --project teich-functions",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
