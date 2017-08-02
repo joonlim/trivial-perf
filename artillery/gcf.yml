@@ -1,0 +1,24 @@
+config:
+  target: 'https://us-central1-teich-functions.cloudfunctions.net'
+  phases:
+    - duration: 60
+      arrivalRate: 1
+  plugins:
+    datadog:
+      host: ''
+      prefix: 'artillery.'
+      tags:
+        - 'mode:test'
+  environments:
+    gcf:
+      target: 'https://us-central1-teich-functions.cloudfunctions.net'
+      phases:
+        - duration: 10
+          arrivalRate: 10
+    std:
+      target: 'https://teich-perf-std.appspot.com'
+
+scenarios:
+  - flow:
+    - get:
+        url: "/helloWorld"
