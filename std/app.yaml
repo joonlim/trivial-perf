@@ -1,6 +1,6 @@
 runtime: nodejs7
 threadsafe: false  # send more than one concurrent request at a time
-instance_class: f2
+instance_class: f1
 
 handlers:
 - url: /.*
