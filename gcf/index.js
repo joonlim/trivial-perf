@@ -6,6 +6,12 @@ exports.prime = function prime (req, res) {
   res.status(200).send(foo);
 };
 
+exports.moarprime = function moarprime (req, res) {
+  console.log("Running Test moar prime");
+  var foo = primes(500,2000);
+  res.status(200).send(foo);
+};
+
 exports.hello = function hello (req, res) {
   console.log("GCF - Hello World");
   res.status(200).send("GCF - Hello World")

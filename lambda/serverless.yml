@@ -29,3 +29,11 @@ functions:
           path: prime
           method: get
           cors: true
+  moarprime:
+    handler: handler.moarprime
+    # The `events` block defines how to trigger the handler.helloWorld code
+    events:
+      - http:
+          path: moarprime
+          method: get
+          cors: true
