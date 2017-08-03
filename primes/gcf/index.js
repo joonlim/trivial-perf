@@ -6,7 +6,7 @@ var primes = require('primes');
  * @param {Object} req Cloud Function request context.
  * @param {Object} res Cloud Function response context.
  */
-exports.helloWorld = function helloWorld (req, res) {
+exports.prime = function prime (req, res) {
   console.log("Running Test");
   var foo = primes(500,1000);
   res.status(200).send(foo);
