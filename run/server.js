@@ -29,6 +29,6 @@ app.get('/sleep-500', function (req, res) {
 })
 
 app.listen(8080, function() {
-  console.log('Started listening')
+  console.log(`Running on http://${HOST}:${PORT}`);
 })
 
