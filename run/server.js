@@ -13,7 +13,7 @@ app.get('/moar-prime', function (req, res) {
 })
 
 app.get('/', function (req, res) {
-  res.send("Hello from Cloud Run");
+  res.send("101 - Hello from Cloud Run");
 })
 
 app.get('/sleep-50', function (req, res) {
@@ -28,7 +28,11 @@ app.get('/sleep-500', function (req, res) {
   }, 500)
 })
 
+app.get('/loaderio-279a91b887a58968d7dff00143aa18d2.html', function (req, res) {
+  res.send("loaderio-279a91b887a58968d7dff00143aa18d2 ");
+})
+
 app.listen(8080, function() {
-  console.log(`Running on http://${HOST}:${PORT}`);
+  console.log(`Running`);
 })
 

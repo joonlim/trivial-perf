@@ -1,7 +1,7 @@
 {
   "name": "simple-perf",
   "version": "0.0.1",
-  "description": "",
+  "description": "This isn't anything",
   "main": "index.js",
   "dependencies": {
     "express": "^4.15.3",
@@ -9,10 +9,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "ab": "artillery quick --duration 60 --rate 1 -n 1 https://teich-perf-std.appspot.com/",
-    "deploy": "gcloud app deploy --project teich-perf-std",
     "start": "node server.js"
   },
-  "author": "",
+  "author": "Oren",
   "license": "ISC"
 }
