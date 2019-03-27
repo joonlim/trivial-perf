@@ -24,7 +24,8 @@ app.get('/sleep-50', function (req, res) {
 
 app.get('/sleep-500', function (req, res) {
   setTimeout(function () {
-    res.send(primes(0,500))
+    let high = Math.floor((Math.random() * 700) + 1500)
+    res.send(primes(500, high))
   }, 500)
 })
 
