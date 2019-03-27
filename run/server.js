@@ -29,8 +29,14 @@ app.get('/sleep-500', function (req, res) {
   }, 500)
 })
 
+// slow.ink
 app.get('/loaderio-279a91b887a58968d7dff00143aa18d2.html', function (req, res) {
   res.send("loaderio-279a91b887a58968d7dff00143aa18d2 ");
+})
+
+// d4f
+app.get('/loaderio-6cefee034b82faf060e2d52889fba4e6.html', function (req, res) {
+  res.send("loaderio-6cefee034b82faf060e2d52889fba4e6 ");
 })
 
 app.listen(8080, function() {
